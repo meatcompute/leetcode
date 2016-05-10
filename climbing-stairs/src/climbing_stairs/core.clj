@@ -1,8 +1,9 @@
 (ns climbing-stairs.core)
 
 (def question
-  "You are climbing a stair case. It takes n steps to reach to the top.
-  Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?")
+  ["You are climbing a stair case. It takes n steps to reach to the top.
+  Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?"
+  "Turns out that the trick is that it's Fib, lol"])
 
 
 (defn fib-seq []
