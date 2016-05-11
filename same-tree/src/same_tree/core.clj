@@ -35,8 +35,7 @@
 
 (defn same?
   [p q]
-  (cond
-    (and (nil? p) (nil? q)) true
-    (= (:val p) (:val q)) (and (same? (:left p) (:left q))
-                               (same? (:right p) (:right q)))
-    :else false))
+  (if (or (nil? p) (nil? q))
+    (= (:val p) (:val q))
+    (and (same? (:left p) (:left q))
+         (same? (:right p) (:right q)))))
